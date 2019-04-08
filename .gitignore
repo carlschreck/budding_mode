@@ -1,2 +1,5 @@
-production/data/*
-production/imaging/*
+production/data
+production/imaging
+nn_python_old
+nn_octave
+pawel_data
