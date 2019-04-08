@@ -7,4 +7,5 @@ nn_python_old
 nn_octave
 pawel_data
 
-.README.md.sw
+.README.md.sw*
+.gitignore.*
