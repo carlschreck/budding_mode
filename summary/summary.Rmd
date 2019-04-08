@@ -101,7 +101,7 @@ In order to further improve on model 2, I turn to neural networks. A small neura
 
 To get a feeling for why model 2 works so well, I show the two hidden parameters in Fig.\hspace{.4ex}\ref{params_model_2}. These parameters seem to be capturing spatial fluctuations in both colony radius $R$ and packing fraction $\phi$, whereas model 1 only considered mean values of $R$ and $\phi$.
 
-```{r fig6, fig.pos='ht', fig.show='hold', out.width="98%", fig.cap='\\label{params_model_2}Neural network hidden nodes for model 2 with two hidden paramters and regularization paramter $\\lambda=1$.'}
+```{r fig6, fig.pos='ht', fig.show='hold', out.width="99%", fig.cap='\\label{params_model_2}Neural network hidden nodes for model 2 with two hidden paramters and regularization paramter $\\lambda=1$.'}
 library(knitr)
 include_graphics("../ML_python/figures/params_image_L2_v2.png")
 ```
@@ -123,9 +123,9 @@ We can further improve on model 3 by adding more hidden layer nodes ("model 4").
 
 Many of parameters of model 4 (Fig.\hspace{.4ex}\ref{params_model_3}) capture fluctations in $R$ and $\phi$ similar to those of model 2 (Fig.\hspace{.4ex}\ref{params_model_2}), athough other parameters do not have easily-discernable structure. It is not clear to me that model 4 (or even model 3) is has found the best parameter set since so many of the parameters lack structure, so the neural network models would benefit from careful regularization, different cost function minimization routines, or an entirely different network architecture.  
 
-```{r fig7, fig.pos='ht', fig.show='hold', out.width="100%", fig.cap='\\label{params_model_3}Neural network hidden nodes for model 3 with 40 hidden paramters and regularization paramter $\\lambda=1$.'}
+```{r fig7, fig.pos='ht', fig.show='hold', out.width="99%", fig.cap='\\label{params_model_3}Neural network hidden nodes for model 3 with 40 hidden paramters and regularization paramter $\\lambda=1$.'}
 library(knitr)
-include_graphics("../ML_python/figures/params_image_L40_v2.png")
+include_graphics("../ML_python/figures/params_image_L40_v3.png")
 ```
 
 To summarize what I have found, the growth of simulated budding cells in spatial settings produce phenotypic-depedent population-level patterns that allow us to determine (up to an accuracy of $0.84$ for model 4) which phenotype a cell colony is composed of. We can acheive this high degree of accuracy even though the colonies have no readily-visible distinguishing features to the naked eye. This method may provide both tremendous cost savings as it circumvents additional time consuming and expensive phenotypic screens. 

@@ -15,6 +15,8 @@ for i in range(40):
     plt.yticks([])
     plt.imshow(img,interpolation='nearest')
 plt.tight_layout()
+plt.subplots_adjust(wspace=0.04, hspace=0.04)
 fig.set_size_inches(8,5)
+plt.savefig('params_image_L40.png',bbox_inches='tight')
 
 plt.show()
