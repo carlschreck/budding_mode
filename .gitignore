@@ -2,6 +2,9 @@ production/data
 production/imaging/*/frames
 ML_python/data
 ML_python/params
+
 nn_python_old
 nn_octave
 pawel_data
+
+.README.md.sw
