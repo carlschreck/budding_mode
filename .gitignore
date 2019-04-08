@@ -1,5 +1,5 @@
 production/data
-production/imaging
+production/imaging/*/frames
 ML_python/data
 ML_python/params
 nn_python_old
