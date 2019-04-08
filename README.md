@@ -2,6 +2,11 @@
 DESCRIPTION
 ==================================================
 
+The goal of this project is to classify in silico 
+  microbial colonys based on the phenotype of cells
+  within the colony. A full summary is provided at 
+  summary/summary.pdf (written with R Markdown).
+
 This project has three types of simulations:
 
 1. "Cell-based" budding yeast colony simulations 
